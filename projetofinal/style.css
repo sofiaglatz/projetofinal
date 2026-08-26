@@ -1,0 +1,39 @@
+header{
+    margin: auto;
+    width: auto;
+    height: auto;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(144, 200, 252);
+    top: 0;
+    display: block;
+    flex-direction: column-reverse;
+}
+.paragrafoum{
+    text-align: center;
+}
+body{
+    background-color: aliceblue;
+    margin-left: auto;
+}
+main{
+    margin-left: 10px;
+}
+#resultado{
+    text-align: center;
+    border: 1px solid;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    height: auto;
+    background-color: rgb(145, 202, 255);
+}
+footer{
+
+}
