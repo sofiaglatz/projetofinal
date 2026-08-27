@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alertas Climáticos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Alertas Climáticos</h1>
+        <p class="paragrafoum">
+            Sistema de orientação da Defesa Civil
+        </p>
+    </header>
+
+    <main>
+
+        <section id="verifiquealerta">
+            <h2>Verifique o alerta</h2>
+
+            <form id="formAlerta">
+
+                <label for="chuva">
+                    Quantidade de chuva (MM):
+                </label>
+
+                <input
+                    type="number"
+                    id="chuva"
+                    min="0"
+                    placeholder="Ex: 55"
+                >
+
+                <label for="vento">
+                    Velocidade do vento (km/h):
+                </label>
+
+                <input
+                    type="number"
+                    id="vento"
+                    min="0"
+                    placeholder="Ex: 65"
+                >
+
+                <button type="submit">
+                    Verificar alerta
+                </button>
+
+            </form>
+        </section>
+
+        <section id="resultado">
+            <h2>Resultado</h2>
+
+            <p>
+                Nível de alerta:
+                <strong id="nivelAlerta">---</strong>
+            </p>
+
+            <p id="justificativa">
+                Informe os valores para verificar o alerta.
+            </p>
+
+            <p id="recomendacao"></p>
+        </section>
+
+        <section id="comointerpretar">
+            <h2>Como interpretar o alerta</h2>
+
+            <article>
+                <h3 id="Normal">Normal</h3>
+                <p>Condições climáticas dentro dos limites normais.</p>
+            </article>
+
+            <article>
+                <h3 id="Atenção">Atenção</h3>
+                <p>É necessário ficar atento às condições climáticas.</p>
+            </article>
+
+            <article>
+                <h3 id="Alerta">Alerta</h3>
+                <p>As condições apresentam risco maior.</p>
+            </article>
+
+            <article>
+                <h3 id="Perigo">Perigo</h3>
+                <p>Condições de risco elevado. Siga as orientações da Defesa Civil.</p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Atividade de Lógica de Programação</p>
+        <p>Estudantes: <strong>Gabriel Scottini, Guilherme Weege, Iohanna de Oliveira, Miguel Coelho, Sofia Glatz.</strong></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
