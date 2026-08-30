@@ -45,6 +45,7 @@ formAlerta.addEventListener("submit", function (evento) {
 
 	if (!Number.isFinite(chuva) || !Number.isFinite(vento) || chuva < 0 || vento < 0) {
 		nivelAlerta.textContent = "Inválido";
+		nivelAlerta.className = "nivel-invalido";
 		justificativa.textContent = "Informe valores numéricos iguais ou maiores que zero.";
 		recomendacao.textContent = "";
 		return;
@@ -54,4 +55,6 @@ formAlerta.addEventListener("submit", function (evento) {
 	nivelAlerta.textContent = resultado.nivel;
 	justificativa.textContent = resultado.justificativa;
 	recomendacao.textContent = resultado.recomendacao;
+
+nivelAlerta.className = "nivel-" + resultado.nivel.toLowerCase();
 });
